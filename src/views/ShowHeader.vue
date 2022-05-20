@@ -58,12 +58,18 @@ export default {
       this.newPath();
     },
     newPath() {
-      this.$router.push({
-        name: "folder",
-        params: {
-          folderId: this.$store.state.folders[0].id,
-        },
-      });
+      if (this.$store.state.folders.length === 0) {
+        this.$router.push({
+          name: "home",
+        });
+      } else {
+        this.$router.push({
+          name: "folder",
+          params: {
+            folderId: this.$store.state.folders[0].id,
+          },
+        });
+      }
     },
   },
 };

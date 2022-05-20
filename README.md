@@ -7,7 +7,7 @@
 - 实现的todo应用功能：
     用户可进行todo事项的分类，创建分类夹，并在相应的分类下创建todo事项，修改todo事项等。当用户再次打开该网页时，数据仍存在。
 
-- 预览地址：
+- [预览地址](https://qqqqyan.github.io/Vue2-todo/dist/index.html)
 
 - 运行：
     ```bash
